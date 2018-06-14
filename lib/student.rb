@@ -83,7 +83,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql,11).flatten
-    #binding.pry
+    binding.pry
   end
 
 
