@@ -82,6 +82,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql,11)
+    binding.pry
   end
 
 
