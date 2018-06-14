@@ -108,7 +108,7 @@ class Student
     LIMIT 1
     SQL
 
-    DB[:conn].execute(sql).flatten
+    student_new = DB[:conn].execute(sql).flatten
 
   end
 
