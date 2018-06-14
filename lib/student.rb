@@ -82,8 +82,8 @@ class Student
     WHERE grade <= ?
     SQL
 
-    DB[:conn].execute(sql,11)
-    binding.pry
+    DB[:conn].execute(sql,11).flatten
+    #binding.pry
   end
 
 
