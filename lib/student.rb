@@ -110,7 +110,6 @@ class Student
 
     student_new = DB[:conn].execute(sql).flatten
     self.new_from_db(student_new)
-
   end
 
 
