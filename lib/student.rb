@@ -119,8 +119,7 @@ class Student
     WHERE grade = ?
     SQL
 
-    student_new = DB[:conn].execute(sql).flatten
-    self.new_from_db(student_new)
+    student_new = DB[:conn].execute(sql,x)
   end
 
 
