@@ -76,12 +76,12 @@ class Student
 
   def self.students_below_12th_grade
     sql = <<-SQL
-    SELECT name
+    SELECT *
     FROM students
-    WHERE grade < ?
+    WHERE grade <= ?
     SQL
 
-    DB[:conn].execute(sql,12)
+    DB[:conn].execute(sql,11)
   end
 
 
