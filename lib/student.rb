@@ -73,6 +73,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql,9)
+    binding.pry
   end
 
   def self.students_below_12th_grade
@@ -82,8 +83,8 @@ class Student
     WHERE grade <= ?
     SQL
 
-    DB[:conn].execute(sql,11).flatten
-    binding.pry
+    DB[:conn].execute(sql,11)
+
   end
 
 
